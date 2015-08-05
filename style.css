@@ -52,7 +52,7 @@ body {
 
 h1 {
 	font-size: 18px;
-	color: #485597;
+	color: #00ACDB;
 }
 
 .wrapper {
@@ -69,11 +69,13 @@ h1 {
 
 /* Middle
 -----------------------------------------------------------------------------*/
+.content { padding: 0 20px 0 20px; }
 .content .filter{
 	width: 230px;
 	margin: 0 auto;
     text-align: center;
 }
+
 
 /* Filters
 -----------------------------------------------------------------------------*/
@@ -117,8 +119,46 @@ h1 {
     background: #FFF;
     transition: all .2s;
 }
-.filters:checked + label:before {background: #485597;}
+.filters:checked + label:before {background: #00ACDB;}
 .filters:checked + label:after {left: 36px;}
 
-/* Middle
+.filters.in:checked ~ .table-fly ~ td.in{
+    visibility: hidden;
+}
+
+/* table
 -----------------------------------------------------------------------------*/
+
+.table-fly {
+    margin-top: 20px;
+}
+.table-fly .main-table{
+    width: 100%;
+}
+.table-fly .main-table th, .table-fly .main-table td {
+    padding: 5px;
+    text-align: center;
+}
+.table-fly .main-table th{
+    background-color: #00ACDB;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.table-fly .main-table th:after{
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1px;
+    height: 10px;
+    top: 7px;
+    background-color: #FFFFFF;
+}
+.table-fly .main-table th.last:after{
+    content: '';
+    background: none;
+}
+.table-fly .main-table .short {
+    display: none;
+}
+.table-fly .icon-air {width: 20px}
