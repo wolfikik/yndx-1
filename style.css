@@ -1,4 +1,3 @@
-/* Eric Meyer's CSS Reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,14 +18,15 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+input[type="checkbox"] {margin: 0}
 ol, ul {
 	list-style: none;
 }
@@ -42,14 +42,19 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* End of Eric Meyer's CSS Reset */
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
 	display: block;
 }
 body {
-	font: 12px/18px Arial, sans-serif;
+	font: 12px Arial, sans-serif;
 }
+
+h1 {
+	font-size: 18px;
+	color: #485597;
+}
+
 .wrapper {
 	min-width: 600px;
 	max-width: 1500px;
@@ -59,23 +64,61 @@ body {
 
 /* Header
 -----------------------------------------------------------------------------*/
-.header {
-	height: 150px;
-	background: #FFE680;
-}
-
+.header {padding: 20px;}
+.header h1 {text-align: center;}
 
 /* Middle
 -----------------------------------------------------------------------------*/
-.content {
+.content .filter{
+	width: 230px;
+	margin: 0 auto;
+    text-align: center;
 }
 
-
-
-
-/* Footer
+/* Filters
 -----------------------------------------------------------------------------*/
-.footer {
-	height: 100px;
-	background: #BFF08E;
+
+.filters {
+    vertical-align: top;
+    margin: 0 3px 0 0;
+    width: 17px;
+    height: 17px;
 }
+.filter label {
+    cursor: pointer;
+}
+.filters:not(checked) {position: absolute;opacity: 0;visibility: hidden;}
+.filters:not(checked) + label {position: relative; padding: 1px 23px 0 65px; font-size: 14px;}
+.filters:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 60px;
+    height: 26px;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    background: #9C9FA7;
+}
+
+.filters:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    width: 22px;
+    height: 22px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    background: #FFF;
+    transition: all .2s;
+}
+.filters:checked + label:before {background: #485597;}
+.filters:checked + label:after {left: 36px;}
+
+/* Middle
+-----------------------------------------------------------------------------*/
