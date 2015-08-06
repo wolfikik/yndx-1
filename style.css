@@ -53,6 +53,8 @@ body {
 h1 {
 	font-size: 18px;
 	color: #00ACDB;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .wrapper {
@@ -62,18 +64,82 @@ h1 {
 }
 
 
-/* Header
+/* up-table
 -----------------------------------------------------------------------------*/
-.header {padding: 20px;}
-.header h1 {text-align: center;}
+.upper{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1;
+}
+.upper .upper-inner {
+    min-width: 600px;
+    max-width: 1500px;
+    margin: 0 auto;
+
+}
+
+.upper .upper-inner .up-table{
+    width: 100%;
+}
+.upper .upper-inner-padding {padding: 0 20px 0px 20px; background-color: #FFF; }
+
+.upper .upper-inner .up-table th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+.upper .upper-inner .up-table th{
+    background-color: #00ACDB;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.upper .upper-inner .up-table th:after{
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1px;
+    height: 10px;
+    top: 7px;
+    background-color: #FFFFFF;
+}
+.upper .upper-inner .up-table th.last:after{
+    content: '';
+    background: none;
+}
+
+.upper .upper-inner .up-table .short {
+    display: none;
+}
+
+.type-fly{width: 97px}
+.num-fly{width: 85px}
+.company-name{width: 138px}
+.company-logo{width: 85px}
+.company-type{width: 216px}
+.airport{width: 211px}
+.in-time{width: 165px}
+.out-time{width: 165px}
+.status{width: 173px}
+.comments{width: 125px}
+
+    /* Header
+    -----------------------------------------------------------------------------*/
+.header {padding: 20px;    z-index: 2; background: #FFFFFF;
+    position: relative; }
+
 
 /* Middle
 -----------------------------------------------------------------------------*/
-.content { padding: 0 20px 0 20px; }
+.content { padding: 0 20px 0 20px; text-align: center;position: relative; }
 .content .filter{
 	width: 230px;
 	margin: 0 auto;
     text-align: center;
+    z-index: 2; background: #FFFFFF;
+    position: relative;
 }
 
 
@@ -86,11 +152,9 @@ h1 {
     width: 17px;
     height: 17px;
 }
-.filter label {
-    cursor: pointer;
-}
+.for-filters {cursor: pointer}
 .filters:not(checked) {position: absolute;opacity: 0;visibility: hidden;}
-.filters:not(checked) + label {position: relative; padding: 1px 23px 0 65px; font-size: 14px;}
+.filters:not(checked) + label {padding: 1px 23px 0 65px; font-size: 14px;}
 .filters:not(checked) + label:before {
     content: '';
     position: absolute;
@@ -122,23 +186,30 @@ h1 {
 .filters:checked + label:before {background: #00ACDB;}
 .filters:checked + label:after {left: 36px;}
 
-.filters.in:checked ~ .table-fly ~ td.in{
-    visibility: hidden;
+.in-tr, .out-tr {display: none}
+
+.in-filter:checked ~ * .in-tr{
+    display: table-row;
+}
+.out-filter:checked ~ * .out-tr{
+    display: table-row;
 }
 
+.for-filters-out {position: absolute;  top: -30px;  z-index: 3;  left: 40%;}
+.for-filters-in{position: absolute;  top: -30px;  z-index: 3;  left: 50%;}
 /* table
 -----------------------------------------------------------------------------*/
 
-.table-fly {
-    margin-top: 20px;
-}
+
 .table-fly .main-table{
     width: 100%;
 }
 .table-fly .main-table th, .table-fly .main-table td {
-    padding: 5px;
     text-align: center;
+    padding-bottom: 7px;
 }
+.table-fly .main-table th{ padding-top: 5px;padding-bottom: 5px;}
+
 .table-fly .main-table th{
     background-color: #00ACDB;
     color: #FFFFFF;
@@ -162,3 +233,9 @@ h1 {
     display: none;
 }
 .table-fly .icon-air {width: 20px}
+.table-fly .main-table tr:hover{
+    background-color: red;
+}
+.table-fly .main-table td:hover{
+    background-color: blue;
+}
