@@ -248,6 +248,17 @@ h1 {
     background-color: #3DCEF5;
 }
 
+.table-fly .main-table tr td:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background-color: #9C9FA7;
+    left: 0px;
+    top:0px;
+    z-index: -1;
+}
+
 .table-fly .main-table td:hover:after {
     background-color: #3DCEF5;
     content: '';
@@ -257,6 +268,10 @@ h1 {
     position: absolute;
     top: -4000px;
     width: 100%;
-
 }
+.table-fly .main-table td{
+    position: relative;
+}
+
+
 
