@@ -203,6 +203,11 @@ h1 {
 
 .table-fly .main-table{
     width: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+.table-fly .main-table td{
+    position: relative;
 }
 .table-fly .main-table th, .table-fly .main-table td {
     text-align: center;
@@ -233,9 +238,25 @@ h1 {
     display: none;
 }
 .table-fly .icon-air {width: 20px}
+
+
+.table-fly .main-table tr.odd  {
+    background-color: rgba(242, 242, 242, 1);
+}
+
 .table-fly .main-table tr:hover{
-    background-color: red;
+    background-color: #3DCEF5;
 }
-.table-fly .main-table td:hover{
-    background-color: blue;
+
+.table-fly .main-table td:hover:after {
+    background-color: #3DCEF5;
+    content: '';
+    z-index: -1;
+    height: 8000px;
+    left: 0;
+    position: absolute;
+    top: -4000px;
+    width: 100%;
+
 }
+
