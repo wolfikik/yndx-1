@@ -11,7 +11,9 @@
 </head>
 
 <!--
-при изменении ширины экрана браузера в табло автоматически скрываются и/или сокращаются значения наименее важных столбцов (например, при ширине 1000 пикселей вы показываете всю таблицу, при ширине 900 пикселей — убираете название авиакомпании, оставляя только логотип, 800 пикселей — сокращаете название воздушного судна (Boeing 737-800 -> B737) и так далее);
+при изменении ширины экрана браузера в табло автоматически скрываются и/или
+сокращаются значения наименее важных столбцов
+(например, при ширине 1000 пикселей вы показываете всю таблицу, при ширине 900 пикселей — убираете название авиакомпании, оставляя только логотип, 800 пикселей — сокращаете название воздушного судна (Boeing 737-800 -> B737) и так далее);
 -->
 
 <body>
@@ -91,7 +93,7 @@
                         <tr class="out-tr" id="r1">
                             <td class="td odd"><a class="link" href="#a1"><img class="icon-air" src="img/up.png" alt="Вылет"></a></td>
                             <td class="td odd"><a class="link" href="#a1">УН 115</a></td>
-                            <td class="td odd"><a class="link" href="#a1">Трансаэро</a></td>
+                            <td class="td odd company-name"><a class="link" href="#a1">Трансаэро</a></td>
                             <td class="td odd"><a class="link" href="#a1"><img src="img/aero.png" alt="Трансаэро"></a></td>
                             <td class="td odd">
                                 <a class="link" href="#a1">
@@ -103,12 +105,12 @@
                             <td class="td out-time odd"><a class="link" href="#a1">10:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a1">15:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a1"><span class="orange">Идет регистрация</span></a></td>
-                            <td class="td odd"><a class="link" href="#a1">№ 1425-02</a></td>
+                            <td class="td odd comments"><a class="link" href="#a1">№ 1425-02</a></td>
                         </tr>
                         <tr class="in-tr" id="r2">
                             <td class="td"><a class="link" href="#a2"><img class="icon-air" src="img/down.png" alt="Прилет"></a></td>
                             <td class="td"><a class="link" href="#a2">ДР 124</a></td>
-                            <td class="td"><a class="link" href="#a2">Победа</a></td>
+                            <td class="td company-name"><a class="link" href="#a2">Победа</a></td>
                             <td class="td"><a class="link" href="#a2"><img src="img/pobeda.png" alt="Победа"></a></td>
                             <td class="td">
                                 <a class="link" href="#a2">
@@ -120,12 +122,12 @@
                             <td class="td"><a class="link" href="#a2">05:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a2">10:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a2"><span class="red">Отменен</span></a></td>
-                            <td class="td"><a class="link" href="#a2">№ 1411-00</a></td>
+                            <td class="td comments"><a class="link" href="#a2">№ 1411-00</a></td>
                         </tr>
                         <tr class="in-tr" id="r3">
                             <td class="td odd"><a class="link" href="#a3"><img class="icon-air" src="img/down.png" alt="Прилет"></a></td>
                             <td class="td odd"><a class="link" href="#a3">УН 115</a></td>
-                            <td class="td odd"><a class="link" href="#a3">Трансаэро</a></td>
+                            <td class="td odd company-name"><a class="link" href="#a3">Трансаэро</a></td>
                             <td class="td odd"><a class="link" href="#a3"><img src="img/aero.png" alt="Трансаэро"></a></td>
                             <td class="td odd">
                                 <a class="link" href="#a3">
@@ -137,12 +139,12 @@
                             <td class="td odd"><a class="link" href="#a3">03:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a3">04:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a3"><span class="red">Отменен</span></a></td>
-                            <td class="td odd"><a class="link" href="#a3">№ 1201-40</a></td>
+                            <td class="td odd comments"><a class="link" href="#a3">№ 1201-40</a></td>
                         </tr>
                         <tr class="out-tr" id="r4">
                             <td class="td"><a class="link" href="#a4"><img class="icon-air" src="img/up.png" alt="Вылет"></a></td>
                             <td class="td"><a class="link" href="#a4">ЮТ 294</a></td>
-                            <td class="td"><a class="link" href="#a4">ЮТэйр</a></td>
+                            <td class="td company-name"><a class="link" href="#a4">ЮТэйр</a></td>
                             <td class="td"><a class="link" href="#a4"><img src="img/utair.png" alt="ЮТэйр"></a></td>
                             <td class="td">
                                 <a class="link" href="#a4">
@@ -154,12 +156,12 @@
                             <td class="td"><a class="link" href="#a4">08:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a4">12:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a4"><span class="green">Посадка</span></a></td>
-                            <td class="td"><a class="link" href="#a4">№ 4005-40</a></td>
+                            <td class="td comments"><a class="link" href="#a4">№ 4005-40</a></td>
                         </tr>
                         <tr class="out-tr" id="r5">
                             <td class="td odd"><a class="link" href="#a5"><img class="icon-air" src="img/up.png" alt="Вылет"></a></td>
                             <td class="td odd"><a class="link" href="#a5">УН 115</a></td>
-                            <td class="td odd"><a class="link" href="#a5">Трансаэро</a></td>
+                            <td class="td odd company-name"><a class="link" href="#a5">Трансаэро</a></td>
                             <td class="td odd"><a class="link" href="#a5"><img src="img/aero.png" alt="Трансаэро"></a></td>
                             <td class="td odd">
                                 <a class="link" href="#a5">
@@ -171,12 +173,12 @@
                             <td class="td out-time odd"><a class="link" href="#a5">10:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a5">15:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a5"><span class="orange">Идет регистрация</span></a></td>
-                            <td class="td odd"><a class="link" href="#a5">№ 1425-02</a></td>
+                            <td class="td odd comments"><a class="link" href="#a5">№ 1425-02</a></td>
                         </tr>
                         <tr class="in-tr" id="r6">
                             <td class="td"><a class="link" href="#a6"><img class="icon-air" src="img/down.png" alt="Прилет"></a></td>
                             <td class="td"><a class="link" href="#a6">ДР 124</a></td>
-                            <td class="td"><a class="link" href="#a6">Победа</a></td>
+                            <td class="td company-name"><a class="link" href="#a6">Победа</a></td>
                             <td class="td"><a class="link" href="#a6"><img src="img/pobeda.png" alt="Победа"></a></td>
                             <td class="td">
                                 <a class="link" href="#a6">
@@ -188,12 +190,12 @@
                             <td class="td"><a class="link" href="#a6">05:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a6">10:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a6"><span class="red">Отменен</span></a></td>
-                            <td class="td"><a class="link" href="#a6">№ 1411-00</a></td>
+                            <td class="td comments"><a class="link" href="#a6">№ 1411-00</a></td>
                         </tr>
                         <tr class="in-tr" id="r7">
                             <td class="td odd"><a class="link" href="#a7"><img class="icon-air" src="img/down.png" alt="Прилет"></a></td>
                             <td class="td odd"><a class="link" href="#a7">УН 115</a></td>
-                            <td class="td odd"><a class="link" href="#a7">Трансаэро</a></td>
+                            <td class="td odd company-name"><a class="link" href="#a7">Трансаэро</a></td>
                             <td class="td odd"><a class="link" href="#a7"><img src="img/aero.png" alt="Трансаэро"></a></td>
                             <td class="td odd">
                                 <a class="link" href="#a7">
@@ -205,12 +207,12 @@
                             <td class="td odd"><a class="link" href="#a7">03:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a7">04:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a7"><span class="red">Отменен</span></a></td>
-                            <td class="td odd"><a class="link" href="#a7">№ 1201-40</a></td>
+                            <td class="td odd comments"><a class="link" href="#a7">№ 1201-40</a></td>
                         </tr>
                         <tr class="out-tr" id="r8">
                             <td class="td"><a class="link" href="#a8"><img class="icon-air" src="img/up.png" alt="Вылет"></a></td>
                             <td class="td"><a class="link" href="#a8">ЮТ 294</a></td>
-                            <td class="td"><a class="link" href="#a8">ЮТэйр</a></td>
+                            <td class="td company-name"><a class="link" href="#a8">ЮТэйр</a></td>
                             <td class="td"><a class="link" href="#a8"><img src="img/utair.png" alt="ЮТэйр"></a></td>
                             <td class="td">
                                 <a class="link" href="#a8">
@@ -222,12 +224,12 @@
                             <td class="td"><a class="link" href="#a8">08:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a8">12:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a8"><span class="green">Посадка</span></a></td>
-                            <td class="td"><a class="link" href="#a8">№ 4005-40</a></td>
+                            <td class="td comments"><a class="link" href="#a8">№ 4005-40</a></td>
                         </tr>
                         <tr class="out-tr" id="r9">
                             <td class="td odd"><a class="link" href="#a9"><img class="icon-air" src="img/up.png" alt="Вылет"></a></td>
                             <td class="td odd"><a class="link" href="#a9">УН 115</a></td>
-                            <td class="td odd"><a class="link" href="#a9">Трансаэро</a></td>
+                            <td class="td odd company-name"><a class="link" href="#a9">Трансаэро</a></td>
                             <td class="td odd"><a class="link" href="#a9"><img src="img/aero.png" alt="Трансаэро"></a></td>
                             <td class="td odd">
                                 <a class="link" href="#a9">
@@ -239,12 +241,12 @@
                             <td class="td out-time odd"><a class="link" href="#a9">10:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a9">15:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a9"><span class="orange">Идет регистрация</span></a></td>
-                            <td class="td odd"><a class="link" href="#a9">№ 1425-02</a></td>
+                            <td class="td odd comments"><a class="link" href="#a9">№ 1425-02</a></td>
                         </tr>
                         <tr class="in-tr" id="r10">
                             <td class="td"><a class="link" href="#a10"><img class="icon-air" src="img/down.png" alt="Прилет"></a></td>
                             <td class="td"><a class="link" href="#a10">ДР 124</a></td>
-                            <td class="td"><a class="link" href="#a10">Победа</a></td>
+                            <td class="td company-name"><a class="link" href="#a10">Победа</a></td>
                             <td class="td"><a class="link" href="#a10"><img src="img/pobeda.png" alt="Победа"></a></td>
                             <td class="td">
                                 <a class="link" href="#a10">
@@ -256,12 +258,12 @@
                             <td class="td"><a class="link" href="#a10">05:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a10">10:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a10"><span class="red">Отменен</span></a></td>
-                            <td class="td"><a class="link" href="#a10">№ 1411-00</a></td>
+                            <td class="td comments"><a class="link" href="#a10">№ 1411-00</a></td>
                         </tr>
                         <tr class="in-tr" id="r11">
                             <td class="td odd"><a class="link" href="#a11"><img class="icon-air" src="img/down.png" alt="Прилет"></a></td>
                             <td class="td odd"><a class="link" href="#a11">УН 115</a></td>
-                            <td class="td odd"><a class="link" href="#a11">Трансаэро</a></td>
+                            <td class="td odd company-name"><a class="link" href="#a11">Трансаэро</a></td>
                             <td class="td odd"><a class="link" href="#a11"><img src="img/aero.png" alt="Трансаэро"></a></td>
                             <td class="td odd">
                                 <a class="link" href="#a11">
@@ -273,12 +275,12 @@
                             <td class="td odd"><a class="link" href="#a11">03:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a11">04:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a11"><span class="red">Отменен</span></a></td>
-                            <td class="td odd"><a class="link" href="#a11">№ 1201-40</a></td>
+                            <td class="td odd comments"><a class="link" href="#a11">№ 1201-40</a></td>
                         </tr>
                         <tr class="out-tr" id="r12">
                             <td class="td"><a class="link" href="#a12"><img class="icon-air" src="img/up.png" alt="Вылет"></a></td>
                             <td class="td"><a class="link" href="#a12">ЮТ 294</a></td>
-                            <td class="td"><a class="link" href="#a12">ЮТэйр</a></td>
+                            <td class="td company-name"><a class="link" href="#a12">ЮТэйр</a></td>
                             <td class="td"><a class="link" href="#a12"><img src="img/utair.png" alt="ЮТэйр"></a></td>
                             <td class="td">
                                 <a class="link" href="#a12">
@@ -290,12 +292,12 @@
                             <td class="td"><a class="link" href="#a12">08:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a12">12:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a12"><span class="green">Посадка</span></a></td>
-                            <td class="td"><a class="link" href="#a12">№ 4005-40</a></td>
+                            <td class="td comments"><a class="link" href="#a12">№ 4005-40</a></td>
                         </tr>
                         <tr class="out-tr" id="r13">
                             <td class="td odd"><a class="link" href="#a13"><img class="icon-air" src="img/up.png" alt="Вылет"></a></td>
                             <td class="td odd"><a class="link" href="#a13">УН 115</a></td>
-                            <td class="td odd"><a class="link" href="#a13">Трансаэро</a></td>
+                            <td class="td odd company-name"><a class="link" href="#a13">Трансаэро</a></td>
                             <td class="td odd"><a class="link" href="#a13"><img src="img/aero.png" alt="Трансаэро"></a></td>
                             <td class="td odd">
                                 <a class="link" href="#a13">
@@ -307,12 +309,12 @@
                             <td class="td out-time odd"><a class="link" href="#a13">10:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a13">15:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a13"><span class="orange">Идет регистрация</span></a></td>
-                            <td class="td odd"><a class="link" href="#a13">№ 1425-02</a></td>
+                            <td class="td odd comments"><a class="link" href="#a13">№ 1425-02</a></td>
                         </tr>
                         <tr class="in-tr" id="r14">
                             <td class="td"><a class="link" href="#a14"><img class="icon-air" src="img/down.png" alt="Прилет"></a></td>
                             <td class="td"><a class="link" href="#a14">ДР 124</a></td>
-                            <td class="td"><a class="link" href="#a14">Победа</a></td>
+                            <td class="td company-name"><a class="link" href="#a14">Победа</a></td>
                             <td class="td"><a class="link" href="#a14"><img src="img/pobeda.png" alt="Победа"></a></td>
                             <td class="td">
                                 <a class="link" href="#a14">
@@ -324,12 +326,12 @@
                             <td class="td"><a class="link" href="#a14">05:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a14">10:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a14"><span class="red">Отменен</span></a></td>
-                            <td class="td"><a class="link" href="#a14">№ 1411-00</a></td>
+                            <td class="td comments"><a class="link" href="#a14">№ 1411-00</a></td>
                         </tr>
                         <tr class="in-tr" id="r15">
                             <td class="td odd"><a class="link" href="#a15"><img class="icon-air" src="img/down.png" alt="Прилет"></a></td>
                             <td class="td odd"><a class="link" href="#a15">УН 115</a></td>
-                            <td class="td odd"><a class="link" href="#a15">Трансаэро</a></td>
+                            <td class="td odd company-name"><a class="link" href="#a15">Трансаэро</a></td>
                             <td class="td odd"><a class="link" href="#a15"><img src="img/aero.png" alt="Трансаэро"></a></td>
                             <td class="td odd">
                                 <a class="link" href="#a15">
@@ -341,12 +343,12 @@
                             <td class="td odd"><a class="link" href="#a15">03:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a15">04:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a15"><span class="red">Отменен</span></a></td>
-                            <td class="td odd"><a class="link" href="#a15">№ 1201-40</a></td>
+                            <td class="td odd comments"><a class="link" href="#a15">№ 1201-40</a></td>
                         </tr>
                         <tr class="out-tr" id="r16">
                             <td class="td"><a class="link" href="#a16"><img class="icon-air" src="img/up.png" alt="Вылет"></a></td>
                             <td class="td"><a class="link" href="#a16">ЮТ 294</a></td>
-                            <td class="td"><a class="link" href="#a16">ЮТэйр</a></td>
+                            <td class="td company-name"><a class="link" href="#a16">ЮТэйр</a></td>
                             <td class="td"><a class="link" href="#a16"><img src="img/utair.png" alt="ЮТэйр"></a></td>
                             <td class="td">
                                 <a class="link" href="#a16">
@@ -358,12 +360,12 @@
                             <td class="td"><a class="link" href="#a16">08:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a16">12:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a16"><span class="green">Посадка</span></a></td>
-                            <td class="td"><a class="link" href="#a16">№ 4005-40</a></td>
+                            <td class="td comments"><a class="link" href="#a16">№ 4005-40</a></td>
                         </tr>
                         <tr class="out-tr" id="r17">
                             <td class="td odd"><a class="link" href="#a17"><img class="icon-air" src="img/up.png" alt="Вылет"></a></td>
                             <td class="td odd"><a class="link" href="#a17">УН 115</a></td>
-                            <td class="td odd"><a class="link" href="#a17">Трансаэро</a></td>
+                            <td class="td odd company-name"><a class="link" href="#a17">Трансаэро</a></td>
                             <td class="td odd"><a class="link" href="#a17"><img src="img/aero.png" alt="Трансаэро"></a></td>
                             <td class="td odd">
                                 <a class="link" href="#a17">
@@ -375,12 +377,12 @@
                             <td class="td out-time odd"><a class="link" href="#a17">10:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a17">15:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a17"><span class="orange">Идет регистрация</span></a></td>
-                            <td class="td odd"><a class="link" href="#a17">№ 1425-02</a></td>
+                            <td class="td odd comments"><a class="link" href="#a17">№ 1425-02</a></td>
                         </tr>
                         <tr class="in-tr" id="r18">
                             <td class="td"><a class="link" href="#a18"><img class="icon-air" src="img/down.png" alt="Прилет"></a></td>
                             <td class="td"><a class="link" href="#a18">ДР 124</a></td>
-                            <td class="td"><a class="link" href="#a18">Победа</a></td>
+                            <td class="td company-name"><a class="link" href="#a18">Победа</a></td>
                             <td class="td"><a class="link" href="#a18"><img src="img/pobeda.png" alt="Победа"></a></td>
                             <td class="td">
                                 <a class="link" href="#a18">
@@ -392,12 +394,12 @@
                             <td class="td"><a class="link" href="#a18">05:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a18">10:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a18"><span class="red">Отменен</span></a></td>
-                            <td class="td"><a class="link" href="#a18">№ 1411-00</a></td>
+                            <td class="td comments"><a class="link" href="#a18">№ 1411-00</a></td>
                         </tr>
                         <tr class="in-tr" id="r19">
                             <td class="td odd"><a class="link" href="#a19"><img class="icon-air" src="img/down.png" alt="Прилет"></a></td>
                             <td class="td odd"><a class="link" href="#a19">УН 115</a></td>
-                            <td class="td odd"><a class="link" href="#a19">Трансаэро</a></td>
+                            <td class="td odd company-name"><a class="link" href="#a19">Трансаэро</a></td>
                             <td class="td odd"><a class="link" href="#a19"><img src="img/aero.png" alt="Трансаэро"></a></td>
                             <td class="td odd">
                                 <a class="link" href="#a19">
@@ -409,12 +411,12 @@
                             <td class="td odd"><a class="link" href="#a19">03:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a19">04:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a19"><span class="red">Отменен</span></a></td>
-                            <td class="td odd"><a class="link" href="#a19">№ 1201-40</a></td>
+                            <td class="td odd comments"><a class="link" href="#a19">№ 1201-40</a></td>
                         </tr>
                         <tr class="out-tr" id="r20">
                             <td class="td"><a class="link" href="#a20"><img class="icon-air" src="img/up.png" alt="Вылет"></a></td>
                             <td class="td"><a class="link" href="#a20">ЮТ 294</a></td>
-                            <td class="td"><a class="link" href="#a20">ЮТэйр</a></td>
+                            <td class="td company-name"><a class="link" href="#a20">ЮТэйр</a></td>
                             <td class="td"><a class="link" href="#a20"><img src="img/utair.png" alt="ЮТэйр"></a></td>
                             <td class="td">
                                 <a class="link" href="#a20">
@@ -426,12 +428,12 @@
                             <td class="td"><a class="link" href="#a20">08:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a20">12:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a20"><span class="green">Посадка</span></a></td>
-                            <td class="td"><a class="link" href="#a20">№ 4005-40</a></td>
+                            <td class="td comments"><a class="link" href="#a20">№ 4005-40</a></td>
                         </tr>
                         <tr class="out-tr" id="r21">
                             <td class="td odd"><a class="link" href="#a21"><img class="icon-air" src="img/up.png" alt="Вылет"></a></td>
                             <td class="td odd"><a class="link" href="#a21">УН 115</a></td>
-                            <td class="td odd"><a class="link" href="#a21">Трансаэро</a></td>
+                            <td class="td odd company-name"><a class="link" href="#a21">Трансаэро</a></td>
                             <td class="td odd"><a class="link" href="#a21"><img src="img/aero.png" alt="Трансаэро"></a></td>
                             <td class="td odd">
                                 <a class="link" href="#a21">
@@ -443,12 +445,12 @@
                             <td class="td out-time odd"><a class="link" href="#a21">10:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a21">15:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a21"><span class="orange">Идет регистрация</span></a></td>
-                            <td class="td odd"><a class="link" href="#a21">№ 1425-02</a></td>
+                            <td class="td odd comments"><a class="link" href="#a21">№ 1425-02</a></td>
                         </tr>
                         <tr class="in-tr" id="r22">
                             <td class="td"><a class="link" href="#a22"><img class="icon-air" src="img/down.png" alt="Прилет"></a></td>
                             <td class="td"><a class="link" href="#a22">ДР 124</a></td>
-                            <td class="td"><a class="link" href="#a22">Победа</a></td>
+                            <td class="td company-name"><a class="link" href="#a22">Победа</a></td>
                             <td class="td"><a class="link" href="#a22"><img src="img/pobeda.png" alt="Победа"></a></td>
                             <td class="td">
                                 <a class="link" href="#a22">
@@ -460,12 +462,12 @@
                             <td class="td"><a class="link" href="#a22">05:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a22">10:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a22"><span class="red">Отменен</span></a></td>
-                            <td class="td"><a class="link" href="#a22">№ 1411-00</a></td>
+                            <td class="td comments"><a class="link" href="#a22">№ 1411-00</a></td>
                         </tr>
                         <tr class="in-tr" id="r23">
                             <td class="td odd"><a class="link" href="#a23"><img class="icon-air" src="img/down.png" alt="Прилет"></a></td>
                             <td class="td odd"><a class="link" href="#a23">УН 115</a></td>
-                            <td class="td odd"><a class="link" href="#a23">Трансаэро</a></td>
+                            <td class="td odd company-name"><a class="link" href="#a23">Трансаэро</a></td>
                             <td class="td odd"><a class="link" href="#a23"><img src="img/aero.png" alt="Трансаэро"></a></td>
                             <td class="td odd">
                                 <a class="link" href="#a23">
@@ -477,12 +479,12 @@
                             <td class="td odd"><a class="link" href="#a23">03:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a23">04:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a23"><span class="red">Отменен</span></a></td>
-                            <td class="td odd"><a class="link" href="#a23">№ 1201-40</a></td>
+                            <td class="td odd comments"><a class="link" href="#a23">№ 1201-40</a></td>
                         </tr>
                         <tr class="out-tr" id="r24">
                             <td class="td"><a class="link" href="#a24"><img class="icon-air" src="img/up.png" alt="Вылет"></a></td>
                             <td class="td"><a class="link" href="#a24">ЮТ 294</a></td>
-                            <td class="td"><a class="link" href="#a24">ЮТэйр</a></td>
+                            <td class="td company-name"><a class="link" href="#a24">ЮТэйр</a></td>
                             <td class="td"><a class="link" href="#a24"><img src="img/utair.png" alt="ЮТэйр"></a></td>
                             <td class="td">
                                 <a class="link" href="#a24">
@@ -494,12 +496,12 @@
                             <td class="td"><a class="link" href="#a24">08:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a24">12:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a24"><span class="green">Посадка</span></a></td>
-                            <td class="td"><a class="link" href="#a24">№ 4005-40</a></td>
+                            <td class="td comments"><a class="link" href="#a24">№ 4005-40</a></td>
                         </tr>
                         <tr class="out-tr" id="r25">
                             <td class="td odd"><a class="link" href="#a25"><img class="icon-air" src="img/up.png" alt="Вылет"></a></td>
                             <td class="td odd"><a class="link" href="#a25">УН 115</a></td>
-                            <td class="td odd"><a class="link" href="#a25">Трансаэро</a></td>
+                            <td class="td odd company-name"><a class="link" href="#a25">Трансаэро</a></td>
                             <td class="td odd"><a class="link" href="#a25"><img src="img/aero.png" alt="Трансаэро"></a></td>
                             <td class="td odd">
                                 <a class="link" href="#a25">
@@ -511,12 +513,12 @@
                             <td class="td out-time odd"><a class="link" href="#a25">10:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a25">15:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a25"><span class="orange">Идет регистрация</span></a></td>
-                            <td class="td odd"><a class="link" href="#a25">№ 1425-02</a></td>
+                            <td class="td odd comments"><a class="link" href="#a25">№ 1425-02</a></td>
                         </tr>
                         <tr class="in-tr" id="r26">
                             <td class="td"><a class="link" href="#a26"><img class="icon-air" src="img/down.png" alt="Прилет"></a></td>
                             <td class="td"><a class="link" href="#a26">ДР 124</a></td>
-                            <td class="td"><a class="link" href="#a26">Победа</a></td>
+                            <td class="td company-name"><a class="link" href="#a26">Победа</a></td>
                             <td class="td"><a class="link" href="#a26"><img src="img/pobeda.png" alt="Победа"></a></td>
                             <td class="td">
                                 <a class="link" href="#a26">
@@ -528,12 +530,12 @@
                             <td class="td"><a class="link" href="#a26">05:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a26">10:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a26"><span class="red">Отменен</span></a></td>
-                            <td class="td"><a class="link" href="#a26">№ 1411-00</a></td>
+                            <td class="td comments"><a class="link" href="#a26">№ 1411-00</a></td>
                         </tr>
                         <tr class="in-tr" id="r27">
                             <td class="td odd"><a class="link" href="#a27"><img class="icon-air" src="img/down.png" alt="Прилет"></a></td>
                             <td class="td odd"><a class="link" href="#a27">УН 115</a></td>
-                            <td class="td odd"><a class="link" href="#a27">Трансаэро</a></td>
+                            <td class="td odd company-name"><a class="link" href="#a27">Трансаэро</a></td>
                             <td class="td odd"><a class="link" href="#a27"><img src="img/aero.png" alt="Трансаэро"></a></td>
                             <td class="td odd">
                                 <a class="link" href="#a27">
@@ -545,12 +547,12 @@
                             <td class="td odd"><a class="link" href="#a27">03:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a27">04:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a27"><span class="red">Отменен</span></a></td>
-                            <td class="td odd"><a class="link" href="#a27">№ 1201-40</a></td>
+                            <td class="td odd comments"><a class="link" href="#a27">№ 1201-40</a></td>
                         </tr>
                         <tr class="out-tr" id="r28">
                             <td class="td"><a class="link" href="#a28"><img class="icon-air" src="img/up.png" alt="Вылет"></a></td>
                             <td class="td"><a class="link" href="#a28">ЮТ 294</a></td>
-                            <td class="td"><a class="link" href="#a28">ЮТэйр</a></td>
+                            <td class="td company-name"><a class="link" href="#a28">ЮТэйр</a></td>
                             <td class="td"><a class="link" href="#a28"><img src="img/utair.png" alt="ЮТэйр"></a></td>
                             <td class="td">
                                 <a class="link" href="#a28">
@@ -562,12 +564,12 @@
                             <td class="td"><a class="link" href="#a28">08:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a28">12:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a28"><span class="green">Посадка</span></a></td>
-                            <td class="td"><a class="link" href="#a28">№ 4005-40</a></td>
+                            <td class="td comments"><a class="link" href="#a28">№ 4005-40</a></td>
                         </tr>
                         <tr class="out-tr" id="r29">
                             <td class="td odd"><a class="link" href="#a29"><img class="icon-air" src="img/up.png" alt="Вылет"></a></td>
                             <td class="td odd"><a class="link" href="#a29">УН 115</a></td>
-                            <td class="td odd"><a class="link" href="#a29">Трансаэро</a></td>
+                            <td class="td odd company-name"><a class="link" href="#a29">Трансаэро</a></td>
                             <td class="td odd"><a class="link" href="#a29"><img src="img/aero.png" alt="Трансаэро"></a></td>
                             <td class="td odd">
                                 <a class="link" href="#a29">
@@ -579,12 +581,12 @@
                             <td class="td out-time odd"><a class="link" href="#a29">10:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a29">15:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a29"><span class="orange">Идет регистрация</span></a></td>
-                            <td class="td odd"><a class="link" href="#a29">№ 1425-02</a></td>
+                            <td class="td odd comments"><a class="link" href="#a29">№ 1425-02</a></td>
                         </tr>
                         <tr class="in-tr" id="r30">
                             <td class="td"><a class="link" href="#a30"><img class="icon-air" src="img/down.png" alt="Прилет"></a></td>
                             <td class="td"><a class="link" href="#a30">ДР 124</a></td>
-                            <td class="td"><a class="link" href="#a30">Победа</a></td>
+                            <td class="td company-name"><a class="link" href="#a30">Победа</a></td>
                             <td class="td"><a class="link" href="#a30"><img src="img/pobeda.png" alt="Победа"></a></td>
                             <td class="td">
                                 <a class="link" href="#a30">
@@ -596,12 +598,12 @@
                             <td class="td"><a class="link" href="#a30">05:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a30">10:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a30"><span class="red">Отменен</span></a></td>
-                            <td class="td"><a class="link" href="#a30">№ 1411-00</a></td>
+                            <td class="td comments"><a class="link" href="#a30">№ 1411-00</a></td>
                         </tr>
                         <tr class="in-tr" id="r31">
                             <td class="td odd"><a class="link" href="#a31"><img class="icon-air" src="img/down.png" alt="Прилет"></a></td>
                             <td class="td odd"><a class="link" href="#a31">УН 115</a></td>
-                            <td class="td odd"><a class="link" href="#a31">Трансаэро</a></td>
+                            <td class="td odd company-name"><a class="link" href="#a31">Трансаэро</a></td>
                             <td class="td odd"><a class="link" href="#a31"><img src="img/aero.png" alt="Трансаэро"></a></td>
                             <td class="td odd">
                                 <a class="link" href="#a31">
@@ -613,12 +615,12 @@
                             <td class="td odd"><a class="link" href="#a31">03:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a31">04:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a31"><span class="red">Отменен</span></a></td>
-                            <td class="td odd"><a class="link" href="#a31">№ 1201-40</a></td>
+                            <td class="td odd comments"><a class="link" href="#a31">№ 1201-40</a></td>
                         </tr>
                         <tr class="out-tr" id="r32">
                             <td class="td"><a class="link" href="#a32"><img class="icon-air" src="img/up.png" alt="Вылет"></a></td>
                             <td class="td"><a class="link" href="#a32">ЮТ 294</a></td>
-                            <td class="td"><a class="link" href="#a32">ЮТэйр</a></td>
+                            <td class="td company-name"><a class="link" href="#a32">ЮТэйр</a></td>
                             <td class="td"><a class="link" href="#a32"><img src="img/utair.png" alt="ЮТэйр"></a></td>
                             <td class="td">
                                 <a class="link" href="#a32">
@@ -630,12 +632,12 @@
                             <td class="td"><a class="link" href="#a32">08:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a32">12:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a32"><span class="green">Посадка</span></a></td>
-                            <td class="td"><a class="link" href="#a32">№ 4005-40</a></td>
+                            <td class="td comments"><a class="link" href="#a32">№ 4005-40</a></td>
                         </tr>
                         <tr class="out-tr" id="r33">
                             <td class="td odd"><a class="link" href="#a33"><img class="icon-air" src="img/up.png" alt="Вылет"></a></td>
                             <td class="td odd"><a class="link" href="#a33">УН 115</a></td>
-                            <td class="td odd"><a class="link" href="#a33">Трансаэро</a></td>
+                            <td class="td odd company-name"><a class="link" href="#a33">Трансаэро</a></td>
                             <td class="td odd"><a class="link" href="#a33"><img src="img/aero.png" alt="Трансаэро"></a></td>
                             <td class="td odd">
                                 <a class="link" href="#a33">
@@ -647,12 +649,12 @@
                             <td class="td out-time odd"><a class="link" href="#a33">10:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a33">15:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a33"><span class="orange">Идет регистрация</span></a></td>
-                            <td class="td odd"><a class="link" href="#a33">№ 1425-02</a></td>
+                            <td class="td odd comments"><a class="link" href="#a33">№ 1425-02</a></td>
                         </tr>
                         <tr class="in-tr" id="r34">
                             <td class="td"><a class="link" href="#a34"><img class="icon-air" src="img/down.png" alt="Прилет"></a></td>
                             <td class="td"><a class="link" href="#a34">ДР 124</a></td>
-                            <td class="td"><a class="link" href="#a34">Победа</a></td>
+                            <td class="td company-name"><a class="link" href="#a34">Победа</a></td>
                             <td class="td"><a class="link" href="#a34"><img src="img/pobeda.png" alt="Победа"></a></td>
                             <td class="td">
                                 <a class="link" href="#a34">
@@ -664,12 +666,12 @@
                             <td class="td"><a class="link" href="#a34">05:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a34">10:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a34"><span class="red">Отменен</span></a></td>
-                            <td class="td"><a class="link" href="#a34">№ 1411-00</a></td>
+                            <td class="td comments"><a class="link" href="#a34">№ 1411-00</a></td>
                         </tr>
                         <tr class="in-tr" id="r35">
                             <td class="td odd"><a class="link" href="#a35"><img class="icon-air" src="img/down.png" alt="Прилет"></a></td>
                             <td class="td odd"><a class="link" href="#a35">УН 115</a></td>
-                            <td class="td odd"><a class="link" href="#a35">Трансаэро</a></td>
+                            <td class="td odd company-name"><a class="link" href="#a35">Трансаэро</a></td>
                             <td class="td odd"><a class="link" href="#a35"><img src="img/aero.png" alt="Трансаэро"></a></td>
                             <td class="td odd">
                                 <a class="link" href="#a35">
@@ -681,12 +683,12 @@
                             <td class="td odd"><a class="link" href="#a35">03:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a35">04:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a35"><span class="red">Отменен</span></a></td>
-                            <td class="td odd"><a class="link" href="#a35">№ 1201-40</a></td>
+                            <td class="td odd comments"><a class="link" href="#a35">№ 1201-40</a></td>
                         </tr>
                         <tr class="out-tr" id="r36">
                             <td class="td"><a class="link" href="#a36"><img class="icon-air" src="img/up.png" alt="Вылет"></a></td>
                             <td class="td"><a class="link" href="#a36">ЮТ 294</a></td>
-                            <td class="td"><a class="link" href="#a36">ЮТэйр</a></td>
+                            <td class="td company-name"><a class="link" href="#a36">ЮТэйр</a></td>
                             <td class="td"><a class="link" href="#a36"><img src="img/utair.png" alt="ЮТэйр"></a></td>
                             <td class="td">
                                 <a class="link" href="#a36">
@@ -698,12 +700,12 @@
                             <td class="td"><a class="link" href="#a36">08:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a36">12:00 06.08.2015</a></td>
                             <td class="td"><a class="link" href="#a36"><span class="green">Посадка</span></a></td>
-                            <td class="td"><a class="link" href="#a36">№ 4005-40</a></td>
+                            <td class="td comments"><a class="link" href="#a36">№ 4005-40</a></td>
                         </tr>
                         <tr class="out-tr" id="r37">
                             <td class="td odd"><a class="link" href="#a37"><img class="icon-air" src="img/up.png" alt="Вылет"></a></td>
                             <td class="td odd"><a class="link" href="#a37">УН 115</a></td>
-                            <td class="td odd"><a class="link" href="#a37">Трансаэро</a></td>
+                            <td class="td odd company-name"><a class="link" href="#a37">Трансаэро</a></td>
                             <td class="td odd"><a class="link" href="#a37"><img src="img/aero.png" alt="Трансаэро"></a></td>
                             <td class="td odd">
                                 <a class="link" href="#a37">
@@ -715,7 +717,7 @@
                             <td class="td out-time odd"><a class="link" href="#a37">10:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a37">15:00 06.08.2015</a></td>
                             <td class="td odd"><a class="link" href="#a37"><span class="orange">Идет регистрация</span></a></td>
-                            <td class="td odd"><a class="link" href="#a37">№ 1425-02</a></td>
+                            <td class="td odd comments"><a class="link" href="#a37">№ 1425-02</a></td>
                         </tr>
                     </tbody>
                 </table>
