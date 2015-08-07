@@ -8,7 +8,6 @@
 	<meta name="keywords" content="табло, аэропорт, полеты" />
 	<meta name="description" content="Задание для Яндекса" />
 	<link href="style.css" rel="stylesheet">
-    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 
 <!--
@@ -109,21 +108,21 @@
                     </thead>
                     <tbody>
                         <tr class="out-tr">
-                            <td class="td odd"><img class="icon-air" src="img/up.png" alt="Вылет"></td>
-                            <td class="td odd">УН 115</td>
-                            <td class="td odd">Трансаэро</td>
+                            <td class="td odd"><a class="link" href="#a1"><img class="icon-air" src="img/up.png" alt="Вылет"></a></td>
+                            <td class="td odd"><a class="link" href="#a1">УН 115</a></td>
+                            <td class="td odd"><a class="link" href="#a1">Трансаэро</a></td>
+                            <td class="td odd"><a class="link" href="#a1"><img src="img/aero.png" alt="Трансаэро"></a></td>
                             <td class="td odd">
-                                <img src="img/aero.png" alt="Трансаэро">
+                                <a class="link" href="#a1">
+                                    <span class="full_type">Boeing 777</span>
+                                    <span class="short_type">B777</span>
+                                </a>
                             </td>
-                            <td class="td odd">
-                                <span class="full_type">Boeing 777</span>
-                                <span class="short_type">B777</span>
-                            </td>
-                            <td class="td odd">Астана</td>
-                            <td class="td out-time odd">05:00 06.08.2015</td>
-                            <td class="td odd">10:00 06.08.2015</td>
-                            <td class="td odd">Идет регистрация</td>
-                            <td class="td odd"></td>
+                            <td class="td odd"><a class="link" href="#a1">Астана</a></td>
+                            <td class="td out-time odd"><a class="link" href="#a1">05:00 06.08.2015</a></td>
+                            <td class="td odd"><a class="link" href="#a1">10:00 06.08.2015</a></td>
+                            <td class="td odd"><a class="link" href="#a1">Идет регистрация</a></td>
+                            <td class="td odd"><a class="link" href="#a1">№ 1115-22</a></td>
                         </tr>
                         <tr class="out-tr">
                             <td class="td"><img class="icon-air" src="img/up.png" alt="Вылет"></td>
@@ -673,6 +672,9 @@
                 </table>
             </div>
         </div>
+    </div>
+    <div class="popup" id="a1">
+        123213
     </div>
 </body>
 </html>
