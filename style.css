@@ -279,11 +279,14 @@ h1 {
     line-height: 30px;
     text-decoration: none;
     outline: none;
+    color: #000000;
 }
 .table-fly .main-table td a:visited{
     color: #000000;
 }
-
+.table-fly .main-table .green{color: green;}
+.table-fly .main-table .orange{color: orange;}
+.table-fly .main-table .red{color: red;}
 /* popups
 -----------------------------------------------------------------------------*/
 
@@ -294,3 +297,69 @@ h1 {
     display: block;
 }
 
+.popup .overlay {
+    position: fixed;
+    left:  0;
+    top:  0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background: #000;
+    opacity: .5;
+}
+.popup .inner{
+    left: 50%;
+    top: 50%;
+    position: fixed;
+    width: 400px;
+    height: auto;
+    margin-left: -200px;
+    margin-top: -220px;
+    z-index: 999;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.popup .inner .close{
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 25px;
+    height: 25px;
+    display: block;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    color: #FFFFFF;
+    background-color: #00acdb;
+    text-decoration: none;
+    text-align: center;
+    line-height: 25px;
+
+}
+.popup .inner h2{
+    padding-top: 5px;
+    font-size: 16px;
+}
+.popup .inner .detail{
+    margin: 20px auto 20px;
+
+}
+.popup .inner .detail td{
+    height: 25px;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 25px;
+}
+
+.popup .inner .detail tr:nth-child(odd){
+    background-color: rgba(156, 159, 167, 0.45);
+}
+
+.popup .inner .icon-air {width: 20px}
