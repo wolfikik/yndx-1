@@ -79,12 +79,10 @@ h1 {
     margin: 0 auto;
 
 }
-
 .upper .upper-inner .up-table{
     width: 100%;
 }
-.upper .upper-inner-padding {padding: 0 20px 0px 20px; background-color: #FFF; }
-
+.upper .upper-inner-padding {padding: 0 20px 0px 20px;}
 .upper .upper-inner .up-table th {
     text-align: center;
     vertical-align: middle;
@@ -98,29 +96,38 @@ h1 {
     padding: 0 1px 0 1px;
     border-right:1px solid #FFFFFF;
 }
-
-
 .upper .upper-inner .up-table th.last{
     border: none;
 }
-
 .upper .upper-inner .up-table .short {
     display: none;
 }
+.upper .upper-inner .up-table td a{
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    outline: none;
+    color: #000000;
+}
+.upper .in-tr, .upper .out-tr {display: table-row}
 
-.type-fly{width: 97px}
-.num-fly{width: 85px}
-.company-name{width: 138px}
-.company-logo{width: 85px}
-.company-type{width: 216px}
-.airport{width: 211px}
-.in-time{width: 165px}
-.out-time{width: 165px}
-.status{width: 173px}
-.comments{width: 125px}
+.upper tbody {
+    visibility: hidden;
+    z-index: 0;
+}
 
-    /* Header
-    -----------------------------------------------------------------------------*/
+.upper td{
+    height: 0px!important;
+}
+
+.upper td a {
+    height: 0px!important;
+}
+/* Header
+-----------------------------------------------------------------------------*/
 .header {padding: 20px;    z-index: 2; background: #FFFFFF;
     position: relative; }
 
@@ -274,35 +281,42 @@ h1 {
 .table-fly .main-table .orange{color: orange;}
 .table-fly .main-table .red{color: red;}
 
+
+
 /* popups
 -----------------------------------------------------------------------------*/
 
 .popup {
     display: none;
+    z-index: 999;
 }
 .popup:target {
     display: block;
 }
 
 .popup .overlay {
+    z-index: 999;
     position: fixed;
-    left:  0;
-    top:  0;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
-    z-index: 99;
-    background: #000;
-    opacity: .5;
+    background: rgba(0,0,0,.7);
+    text-align: center
+}
+.popup .overlay:after{
+    display: inline-block;
+    height: 100%;
+    width: 0;
+    vertical-align: middle;
+    content: ''
 }
 .popup .inner{
-    left: 50%;
-    top: 50%;
-    position: fixed;
+    display: inline-block;
+    position: relative;
     width: 400px;
-    height: auto;
-    margin-left: -200px;
-    margin-top: -220px;
-    z-index: 999;
+    vertical-align: middle;
+    z-index: 9999;
     background-color: #FFFFFF;
     border-radius: 10px;
     -moz-border-radius: 10px;
@@ -355,16 +369,19 @@ h1 {
 /* media
 -----------------------------------------------------------------------------*/
 
+
+
+
 @media all and (max-width: 1100px) {
     .for-filters-out {left:38%}
 }
 @media all and (max-width: 1000px) {
-    .table-fly .main-table td{
+    .table-fly .main-table td, .up-table td{
         vertical-align: middle;
         padding-left: 3px;
         padding-right: 3px;
     }
-    .table-fly .main-table td a{
+    .table-fly .main-table td a, .up-table td a{
         display: block;
         text-align: center;
         width: 100%;
@@ -376,17 +393,17 @@ h1 {
         vertical-align: middle;
     }
 
-    .table-fly .main-table td.odd:before{
+    .table-fly .main-table td.odd:before, .up-table td.odd:before{
         content: '';
         height: 45px;
     }
 }
 
 @media all and (max-width: 900px) {
-    .table-fly .main-table .short {display: block}
-    .table-fly .main-table .full {display: none}
-    .upper .upper-inner .up-table .short {display: block}
-    .upper .upper-inner .up-table .full {display: none}
+    .table-fly .main-table .short,.up-table .short {display: block}
+    .table-fly .main-table .full, .up-table .full {display: none}
+    .upper .upper-inner .up-table .short, .up-table .short {display: block}
+    .upper .upper-inner .up-table .full, .up-table .full{display: none}
     .for-filters-out {left:34%}
 }
 
