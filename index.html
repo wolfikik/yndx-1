@@ -1,9 +1,18 @@
+<!--
+    Описание выполненной работы.
+    Скрытие блоков при уменьшении расширения экрана реализовано с помощью media queries.
+    Всплывающее окно реализовано с помощью псевдокласса target.
+    Фильтрация "Вылет" и "Прилет" реализована с помощью родственных и соседних селекторов.
+    Фиксация топа таблицы выполнено копированием основной таблицы (всей таблицы, чтобы ширина у ячеек оставалась одинаковой у верхней и основной таблицы)
+     и фиксированием ее сверху + z-index. Скрытие ячеек сделано с помощью visibility: hidden и height 0 у ячеек таблицы.
+     Все эти факты накладывают ограничение для браузеров, табло корректно отображается в: IE 9.0+, Chrome 5.0+, Opera 10.0+, Safari 4.0+, Firefox 3.6+
+-->
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Табло аэропорта Внуково</title>
 	<meta name="keywords" content="табло, аэропорт, полеты" />
 	<meta name="description" content="Задание для Яндекса" />
