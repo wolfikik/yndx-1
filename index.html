@@ -4,8 +4,10 @@
     Всплывающее окно реализовано с помощью псевдокласса target.
     Фильтрация "Вылет" и "Прилет" реализована с помощью родственных и соседних селекторов.
     Фиксация топа таблицы выполнено копированием основной таблицы (всей таблицы, чтобы ширина у ячеек оставалась одинаковой у верхней и основной таблицы)
-     и фиксированием ее сверху + z-index. Скрытие ячеек сделано с помощью visibility: hidden и height 0 у ячеек таблицы.
-     Все эти факты накладывают ограничение для браузеров, табло корректно отображается в: IE 9.0+, Chrome 5.0+, Opera 10.0+, Safari 4.0+, Firefox 3.6+
+    и фиксированием ее сверху + z-index. Скрытие ячеек сделано с помощью visibility: hidden и height 0 у ячеек таблицы.
+    Зебру при фильтрации делать не стал, т.к. ее возможно сделать с помощью nth-of-type, но для этого надо было бы переверстать все таблицы блочно,
+    чтобы нечетные tr = div, а четные tr = span style="display block".
+    Все эти факты накладывают ограничение для браузеров, табло корректно отображается в: IE 9.0+, Chrome 5.0+, Opera 10.0+, Safari 4.0+, Firefox 3.6+
 -->
 <!DOCTYPE html>
 <html>
@@ -850,10 +852,10 @@
                             <td class="td company-name"><a class="link" href="#a8">ЮТэйр</a></td>
                             <td class="td"><a class="link" href="#a8"><img src="img/utair.png" alt="ЮТэйр"></a></td>
                             <td class="td">
-                                <a class="link" href="#a8">
-                                    <span class="full">Airbus A320</span>
-                                    <span class="short">A320</span>
-                                </a>
+                                    <a class="link" href="#a8">
+                                        <span class="full">Airbus A320</span>
+                                        <span class="short">A320</span>
+                                    </a>
                             </td>
                             <td class="td"><a class="link" href="#a8">Батуми</a></td>
                             <td class="td"><a class="link" href="#a8">08:00 06.08.2015</a></td>
