@@ -8,7 +8,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+figure, figcaption, footer, header,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -19,7 +19,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, menu, nav, section {
 	display: block;
 }
 
@@ -36,14 +36,13 @@ blockquote, q {
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
-	content: none;
 }
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
 	display: block;
 }
 body {
@@ -68,8 +67,8 @@ h1 {
 -----------------------------------------------------------------------------*/
 .upper{
     position: fixed;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: 1;
 }
@@ -82,17 +81,17 @@ h1 {
 .upper .upper-inner .up-table{
     width: 100%;
 }
-.upper .upper-inner-padding {padding: 0 20px 0px 20px;}
+.upper .upper-inner-padding {padding: 0 20px 0 20px;}
 .upper .in-tr, .upper .out-tr {display: table-row}
 .upper tbody {
     visibility: hidden;
     z-index: 0;
 }
 .upper td{
-    height: 0px!important;
+    height: 0!important;
 }
 .upper td a {
-    height: 0px!important;
+    height: 0!important;
 }
 
 /* Header
@@ -173,7 +172,8 @@ h1 {
     background-color: rgba(156, 159, 167, 0.45);
 }
 
-/*fix zebra which filter*/
+/* fix zebra with filter
+-----------------------------------------------------------------------------*/
 .in-filter:not(:checked) ~ .out-filter:checked ~ * .out-1 td,
 .in-filter:not(:checked) ~ .out-filter:checked ~ * .out-3 td,
 .in-filter:not(:checked) ~ .out-filter:checked ~ * .out-5 td,
